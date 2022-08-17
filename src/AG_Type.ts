@@ -6,5 +6,4 @@
  *
  * @AG_State 2022-08-17
  */
-
 export type AG_Leaf = string | number | boolean | null | undefined;

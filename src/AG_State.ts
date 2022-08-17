@@ -6,7 +6,6 @@
  *
  * @AG_State 2022-08-16
  */
-
 import {AG_ChainTree} from './AG_ChainTree';
 
 export class AG_State extends AG_ChainTree {
@@ -22,7 +21,7 @@ export class AG_State extends AG_ChainTree {
     if (state == null) {
       return instance
     }
-    instance.update(state);
+    instance._ag_update(state);
     return instance;
   }
 
