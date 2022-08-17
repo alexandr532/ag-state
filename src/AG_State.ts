@@ -6,7 +6,10 @@
  *
  * @AG_State 2022-08-16
  */
-export class AG_State {
+
+import {AG_ChainTree} from './AG_ChainTree';
+
+export class AG_State extends AG_ChainTree {
   private static _instance: Map<any, AG_State> = new Map();
 
   public static instance(id: any, state?: object): AG_State {
@@ -19,21 +22,12 @@ export class AG_State {
     if (state == null) {
       return instance
     }
-    instance.init(state);
+    instance.update(state);
     return instance;
   }
 
+
   protected constructor(state?: object) {
-    if (state != null) {
-      this.init(state)
-    }
-  }
-
-  public update(state: object) {
-
-  }
-  
-  public init(state: object) {
-
+    super(state);
   }
 }
