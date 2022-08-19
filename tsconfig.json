@@ -20,6 +20,9 @@
   "include": [
     "src/**/*.ts"
   ],
+  "files": [
+    "index.ts"
+  ],
   "esm": true,
   "exclude": [
     "node_modules",

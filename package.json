@@ -17,10 +17,13 @@
   "bugs": "https://github.com/alexandr532/ag-state/issues",
   "homepage": "https://github.com/alexandr532/ag-state",
   "devDependencies": {
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "typescript-bundle": "^1.0.18"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "bundle": "tsc-bundle ./tsconfig.json --outFile ./playground/ag-state.js --exportAs AG",
+    "playground": "npx http-server ./playground --port 4000"
   },
   "files": [
     "LICENSE",

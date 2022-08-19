@@ -6,4 +6,6 @@
  *
  * @AG_State 2022-08-16
  */
-export * from './lib/AG_State';
+import AG_State from './src/AG_State';
+export const _State = AG_State;
+export const State = AG_State.instance('Master');

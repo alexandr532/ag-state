@@ -6,9 +6,9 @@
  *
  * @AG_State 2022-08-16
  */
-import {AG_ChainTree} from './AG_ChainTree';
+import { AG_ChainTree } from './AG_ChainTree';
 
-export class AG_State extends AG_ChainTree {
+export default class AG_State extends AG_ChainTree {
   private static _instance: Map<any, AG_State> = new Map();
 
   public static instance(id: any, state?: object): AG_State {
